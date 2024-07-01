@@ -1,0 +1,139 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+nav {
+  background: #584910;
+  color: white;
+  padding: 1em;
+  text-align: center;
+  position: fixed;
+  top: 0;
+  z-index: 10;
+  width: 100%;
+}
+
+header {
+  margin-bottom: 2em;
+  padding: 1.5rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+header h2 {
+  font-size: 1.2rem;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+.content {
+  margin: 8rem auto 0em;
+  max-width: 800px;
+}
+
+section {
+  margin-bottom: 2rem;
+  padding: 1.5rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+h1,
+h2 {
+  margin-bottom: 1rem;
+}
+
+h2[data-testid="goal1-title"],
+h2[data-testid="goal2-title"],
+h2[data-testid="goal3-title"],
+h2[data-testid="goal4-title"] {
+  border-bottom: 2px solid #584910;
+  padding-bottom: 0.2rem;
+}
+
+p {
+  margin-bottom: 1em;
+}
+
+.links a {
+  color: #584910;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+footer {
+  background: #584910;
+  padding: 1rem;
+  color: white;
+  text-align: center;
+}
+
+footer a {
+  color: white;
+  text-decoration: none;
+  margin-left: 1em;
+  cursor: pointer;
+}
+
+/* Media queries */
+
+@media screen and (max-width: 675px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+  main {
+    padding: 1em;
+  }
+  .content {
+    margin-top: 6em;
+  }
+}
+
+/* Tablet screen*/
+@media screen and (max-width: 500px) {
+  h1 {
+    font-size: 1.2rem;
+  }
+  h2 {
+    font-size: 1rem;
+  }
+  p {
+    font-size: 0.9rem;
+  }
+  h2[data-testid="goal1-title"],
+  h2[data-testid="goal2-title"],
+  h2[data-testid="goal3-title"],
+  h2[data-testid="goal4-title"] {
+    font-size: 1.2rem;
+  }
+}
+
+/* Mobile screen*/
+@media screen and (max-width: 400px) {
+  h1 {
+    font-size: 1rem;
+  }
+  h2 {
+    font-size: 0.8rem;
+  }
+  p {
+    font-size: 0.8rem;
+  }
+
+  h2[data-testid="goal1-title"],
+  h2[data-testid="goal2-title"],
+  h2[data-testid="goal3-title"],
+  h2[data-testid="goal4-title"] {
+    font-size: 1rem;
+  }
+}
